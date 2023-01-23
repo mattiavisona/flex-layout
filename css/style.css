@@ -1,0 +1,111 @@
+header {
+  height: 200px;
+
+  background-color: #daa520;
+
+
+}
+
+.page-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+
+  padding: 30px;
+}
+
+.article-container {
+  display: flex;
+  flex-flow: row nowrap;
+
+  gap: 20px;
+}
+
+
+#links {
+  display: flex;
+
+  flex-flow: column;
+
+  justify-content: center;
+  align-items: stretch;
+}
+
+#links ul {
+  list-style-type: none;
+
+  padding: 20px;
+
+}
+
+
+#links ul li {
+  background-color: #ff000020;
+  border: 1px solid red;
+
+  padding: 8px 12px;
+}
+
+
+/* articolo  */
+main {
+  /* flex-grow: 1; */
+  flex-shrink: 1;
+
+  width: 100%;
+  height: 600px;
+
+  background-color: #800080;
+}
+main article {
+  padding: 12px;
+}
+
+
+aside {
+  flex-grow: 1;
+  min-width: 300px;
+  height: 400px;
+
+  /* influiscono sui figli diretti
+  (flex-items) 
+  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #ee82ee;
+  
+}
+
+aside:not(#links) {
+  height: auto;
+  /* influiscono su se stesso in relazione
+  al container flex genitore diretto */
+  align-self: stretch;
+
+}
+
+aside .adv {
+
+  width: 200px;
+  height: 200px;
+
+  border: 1px darkgreen solid;
+
+  background-color: #00800030;
+
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+}
+
+
+footer {
+  height: 200px;
+
+  background-color: #add8e6;
+}
